@@ -1,0 +1,126 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(243, 248, 252);
+  text-align: center;
+}
+.container{
+  position:absolute;
+  border: rgb(203, 203, 203) solid 3px;
+  transform: translate(-50%,0%);
+  top: 20%;
+  left:50%;
+}
+.underline{
+  position: relative;
+  font-size: 31px;
+} 
+.underline::after{
+  content: ' ';
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 2px;
+  width: 20%;
+  background-color: hsl(205, 78%, 60%);
+}
+
+.contain{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: rgba(244, 244, 244, 0.681) solid;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.image-Con{
+  margin-top: 10px;
+  border-radius: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.quote{
+  font-weight: 900;
+  position: absolute;
+  font-size: 12px;
+  background-color: hsl(205, 78%, 60%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.fa-quote-right{
+  align-self:center;
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+}
+#images{
+  object-fit: cover;
+  object-position: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+#circle{
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  top: 0%;
+  z-index: -1;
+  transform: translate(10px,-15%);
+  background-color: hsl(205, 78%, 60%);
+  
+}
+
+#name{
+  font-weight: 700;
+ margin: 10px 0px 0px 0px;
+}
+#prof{
+  margin: 3px;
+  font-size: 12px;
+  color: hsl(205, 78%, 60%);
+  
+}
+#review{
+  padding: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 10px;
+}
+
+.btn{
+  margin: 5px;
+  border: none;
+  padding: 0%;
+  font-size: 20px;
+  background-color: transparent;
+  color: hsl(205, 78%, 60%);
+  transition: linear 150ms;
+
+}
+.btn:hover{
+  cursor: pointer;
+  font-size: 22px;
+  color: hsl(205, 100%, 45%);
+}
+.arrows{
+  margin: 0px;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
